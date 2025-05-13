@@ -1,0 +1,2 @@
+1) Fill requirements.txt with the modules you need
+2) Run "nix-shell python.nix"
