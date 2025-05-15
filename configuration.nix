@@ -41,4 +41,14 @@
     git
     lazygit
   ];
+
+  ### BASH CONFIG
+  programs.bash.shellAliases = {
+      ls = "ls --color=auto";
+      grep = "grep --color=auto";
+      vim = "nvim";
+      vi = "nvim";
+  };
+  programs.fzf.keybindings = true;
+
 }
