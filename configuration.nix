@@ -80,8 +80,8 @@
     enable = true;
     #blesh.enable = true;
     shellAliases = {
-        vim = "kak";
-        vi = "kak";
+        vim = "nvim";
+        vi = "nvim";
         ls = "ls --color";
         grep = "grep --color";
     };
