@@ -19,7 +19,14 @@ pkgs.mkShell rec {
 # add them to PYTHONPATH and thus make them accessible from within the venv.
             pythonPackages.numpy
             pythonPackages.requests
-
+            pythonPackages.scipy
+            pythonPackages.matplotlib
+            pythonPackages.jupyterlab
+            pythonPackages.opencv-python
+            pythonPackages.pdf2image
+            pythonPackages.pyzbar
+            pythonPackages.sympy
+            pythonPackages.pyyaml
 # In this particular example, in order to compile any binary extensions they may
 # require, the Python modules listed in the hypothetical requirements.txt need
 # the following packages to be installed locally:
@@ -44,5 +51,4 @@ pkgs.mkShell rec {
 # allow pip to install wheels
         unset SOURCE_DATE_EPOCH
         '';
-
 }

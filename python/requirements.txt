@@ -1,2 +1,8 @@
-requests
 bs4
+pandas
+xlrd
+openpyxl
+pylabels
+reportlab
+sympy
+qrcode

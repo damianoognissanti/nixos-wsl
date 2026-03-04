@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
   };
 
@@ -15,7 +15,8 @@
           ./configuration.nix
           nixos-wsl.nixosModules.default
           {
-            system.stateVersion = "24.11";
+            nixpkgs.config.allowUnfree = true;
+            system.stateVersion = "25.05";
             wsl.enable = true;
           }
         ];
